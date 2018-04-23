@@ -1,0 +1,24 @@
+{
+  "name": "curriculum-vitae",
+  "version": "0.1.0",
+  "description": "Personal online CV ready to be printed or exported as PDF",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dacappo/curriculum-vitae.git"
+  },
+  "keywords": [
+    "CV",
+    "curriculum",
+    "vitae"
+  ],
+  "author": "Patrick Spiegel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dacappo/curriculum-vitae/issues"
+  },
+  "homepage": "https://github.com/dacappo/curriculum-vitae#readme"
+}
