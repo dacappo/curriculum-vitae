@@ -19,3 +19,21 @@ body {
     margin: 0px 0px;
     overflow: hidden;
 }
+
+#main {
+    position: relative;
+    width: calc(64% - 50px);
+    height: calc(100% - 50px);
+    background-color: white;
+    float: left;
+    padding: 25px;
+}
+
+#sidebar {
+    position: relative;
+    width: calc(36% - 50px);
+    height: calc(100% - 50px);
+    background-color: #f3f3f3;
+    float:left;
+    padding: 25px;
+}
