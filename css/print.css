@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    background-color: white;
+    background-image: none;
+}
+
+#sheet {
+    box-shadow: none;
+    background-color: white;
+}
