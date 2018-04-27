@@ -84,7 +84,7 @@ p {
     text-align: center;
 }
 
-.circle > .far {
+.circle > .far, .circle > .fas {
     line-height: 30px;
 }
 
