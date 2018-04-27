@@ -113,6 +113,8 @@ p {
     color:#0D597B;
 }
 
+/* --- Sidebar style --- */
+
 #sidebar {
     position: relative;
     width: calc(36% - 50px);
@@ -120,6 +122,43 @@ p {
     background-color: #f3f3f3;
     float:left;
     padding: 25px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+#sidebar li {
+    margin-bottom: 1.5em;
+}
+
+#sidebar i {
+    line-height: 26px;
+}
+
+#sidebar a {
+  color:inherit;
+  text-decoration: none;
+}
+
+#sidebar .fa-link {
+    color: #545454;
+    float: right;
+}
+
+.little-circle {
+    color: white;
+    display: inline-block;
+    background-color: #0D597B;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: .5em;
 }
 
 #footer {
