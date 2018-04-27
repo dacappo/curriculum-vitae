@@ -190,6 +190,7 @@ p {
     color: white;
     display: inline-block;
     background-color: #0D597B;
+    background: linear-gradient(#55acee, #4183b5);
     width: 26px;
     height: 26px;
     border-radius: 13px;
