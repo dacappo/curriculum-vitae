@@ -32,6 +32,87 @@ body {
     padding: 25px;
 }
 
+/* --- General style --- */
+
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu',sans-serif;
+    margin: 0px 0px;
+}
+
+h1, h2 {
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0px 0px;
+    color: #0D597B;
+    font-weight: 100;
+    font-size: 31px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+h3::after { 
+    content: " »";
+}
+
+h4 {
+    margin: 0px 0px 5px 34px;
+}
+
+p {
+    margin: 5px 0px;
+}
+
+.circle {
+    color: white;
+    display: inline-block;
+    background: linear-gradient(#55acee, #4183b5);
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+.circle > .far {
+    line-height: 30px;
+}
+
+.part {
+    margin-left: 34px;
+    margin-bottom: 20px;
+}
+
+.job {
+    text-transform: uppercase;
+}
+
+.company {
+    margin-left: 34px;
+}
+
+.time {
+    color: #A1A1A1;
+    font-weight: 100;
+    float: right;
+}
+
+.title {
+    font-style: italic;
+    font-weight: 800;
+    color:#0D597B;
+}
+
 #sidebar {
     position: relative;
     width: calc(36% - 50px);
