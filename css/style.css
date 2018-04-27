@@ -73,6 +73,11 @@ p {
     margin: 5px 0px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .circle {
     color: white;
     display: inline-block;
@@ -111,6 +116,15 @@ p {
     font-style: italic;
     font-weight: 800;
     color:#0D597B;
+}
+
+.part a {
+    text-decoration: none;
+}
+
+.part i {
+    float: right;
+    color: #A1A1A1;
 }
 
 /* --- Sidebar style --- */
