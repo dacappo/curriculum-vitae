@@ -149,6 +149,43 @@ p {
     float: right;
 }
 
+.bar {
+    width: 100%;
+    height: 14px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.bar-loaded {
+    height: 14px;
+    background: linear-gradient(to left,#55acee, #4183b5);
+    border-radius: 7px;
+}
+
+.bar-loaded-90 {
+    width: 90%;
+}
+
+.bar-loaded-80 {
+    width: 80%;
+}
+
+.bar-loaded-60 {
+    width: 60%;
+}
+
+.bar-loaded-40 {
+    width: 40%;
+}
+
+.bar-loaded-30 {
+    width: 30%;
+}
+
+.bar-loaded-20 {
+    width: 20%;
+}
+
 .little-circle {
     color: white;
     display: inline-block;
