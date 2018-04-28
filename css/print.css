@@ -2,9 +2,14 @@ body {
     margin: 0;
     background-color: white;
     background-image: none;
+    -webkit-print-color-adjust: exact;
 }
 
 #sheet {
     box-shadow: none;
     background-color: white;
+}
+
+a .fa-link {
+    display: none;
 }
