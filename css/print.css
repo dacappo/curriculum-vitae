@@ -13,3 +13,7 @@ body {
 a .fa-link {
     display: none;
 }
+
+#sidebar {
+    border-radius: 1em;
+}
