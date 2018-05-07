@@ -16,11 +16,17 @@ gulp.task('clean', function() {
 gulp.task('combine', function () {              
     return gulp.src('index.html')
         .pipe(useref())
-        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', minifyCss()))
         .pipe(gulp.dest('build/'));
 });
 
+/* Copy all static images */
+gulp.task('images', function() {
+    return gulp.src('images/**/*')
+      .pipe(imagemin({optimizationLevel: 5}))
+      .pipe(gulp.dest('build/images'));
+  });
+
 /* Main build instruction */
-gulp.task('build', ['combine']);
+gulp.task('build', ['combine', 'images']);
