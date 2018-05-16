@@ -4,7 +4,8 @@ const gulp = require('gulp'),
       minifyCss = require('gulp-minify-css'),
       uglify = require('gulp-uglify'),
       useref = require('gulp-useref'),
-      gulpif = require('gulp-if')
+      gulpif = require('gulp-if'),
+      webserver = require('gulp-webserver'),
       del = require('del');
 
 /* Clean build directory */
@@ -26,7 +27,15 @@ gulp.task('images', function() {
     return gulp.src('images/**/*')
       .pipe(imagemin({optimizationLevel: 5}))
       .pipe(gulp.dest('build/images'));
-  });
+});
 
 /* Main build instruction */
 gulp.task('build', ['combine', 'images']);
+
+/* Serve build on localhost */
+gulp.task('serve', function() {
+    gulp.src('build').pipe(webserver({
+        livereload: true,
+        open: true
+    }));
+});
