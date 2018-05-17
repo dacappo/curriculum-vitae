@@ -6,8 +6,18 @@
 
 A modern online CV ready to be deployed and printed as PDF.
 
-## How to use
-Just deploy the files from this repository to a server of your joice. For testing just run a local server e.g.:
+## Getting started
+To install the require dev dependencies run
 ```
-python -m SimpleHTTPServer 8080
+npm install
+````
+
+To build the project and optimize the files run
+```
+gulp build
+```
+
+To serve and open the built project on your local machine run
+```
+npm start
 ```
