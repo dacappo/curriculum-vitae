@@ -19,6 +19,8 @@ gulp.task('combine', function () {
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', minifyCss()))
+        .pipe(useref({}))
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('build/'));
 });
 
