@@ -136,6 +136,7 @@ a {
     background-color: #f3f3f3;
     float:left;
     padding: 25px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
 }
 
 #sidebar ul {
