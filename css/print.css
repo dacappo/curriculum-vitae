@@ -3,6 +3,7 @@ body {
     background-color: white;
     background-image: none;
     -webkit-print-color-adjust: exact;
+    color-adjust: exact;
 }
 
 #sheet {
