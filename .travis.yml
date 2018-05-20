@@ -1,5 +1,11 @@
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y sshpass
 install:
   - npm install -g gulp
   - npm install
 script:
   - gulp build
+after_success:
+  - ssh-keyscan -H -t rsa $SERVER_ADDRESS  >> ~/.ssh/known_hosts
+  - sshpass -p $SERVER_PASSWORD rsync -rv build/ $SERVER_USER@$SERVER_ADDRESS:/var/www/cv/
