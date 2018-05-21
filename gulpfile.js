@@ -31,8 +31,14 @@ gulp.task('images', function() {
       .pipe(gulp.dest('build/images'));
 });
 
+/* Copy favicon to build directory */
+gulp.task('copy-favicon', function() {
+    return gulp.src('favicon.*')
+        .pipe(gulp.dest('build/'));
+  });
+
 /* Main build instruction */
-gulp.task('build', ['combine', 'images']);
+gulp.task('build', ['combine', 'images', 'copy-favicon']);
 
 /* Serve build on localhost */
 gulp.task('serve', function() {
