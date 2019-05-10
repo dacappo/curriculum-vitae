@@ -38,7 +38,7 @@ gulp.task('copy-favicon', function() {
   });
 
 /* Main build instruction */
-gulp.task('build', ['combine', 'images', 'copy-favicon']);
+gulp.task('build', gulp.series('combine', 'images', 'copy-favicon'));
 
 /* Serve build on localhost */
 gulp.task('serve', function() {
