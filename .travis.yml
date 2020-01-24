@@ -9,6 +9,5 @@ script:
   - sed -i -e "s/__MY_ADDRESS__/$MY_ADDRESS/g" build/index.html
   - sed -i -e "s/__MY_NUMBER__/$MY_NUMBER/g" build/index.html
   - sed -i -e "s/__MY_EMAIL__/$MY_EMAIL/g" build/index.html
-after_success:
   - ssh-keyscan -H -t rsa $SERVER_ADDRESS  >> ~/.ssh/known_hosts
   - sshpass -p $SERVER_PASSWORD rsync -rv build/ $SERVER_USER@$SERVER_ADDRESS:/var/www/cv/
