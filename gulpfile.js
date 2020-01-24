@@ -1,11 +1,10 @@
 const gulp = require('gulp'),
       htmlmin = require('gulp-htmlmin'),
       imagemin = require('gulp-imagemin'),
-      minifyCss = require('gulp-minify-css'),
+      minifyCss = require('gulp-clean-css'),
       uglify = require('gulp-uglify'),
       useref = require('gulp-useref'),
       gulpif = require('gulp-if'),
-      webserver = require('gulp-webserver'),
       del = require('del');
 
 /* Clean build directory */
@@ -40,10 +39,3 @@ gulp.task('copy-favicon', function() {
 /* Main build instruction */
 gulp.task('build', gulp.series('combine', 'images', 'copy-favicon'));
 
-/* Serve build on localhost */
-gulp.task('serve', function() {
-    gulp.src('build').pipe(webserver({
-        livereload: true,
-        open: true
-    }));
-});
