@@ -22,8 +22,7 @@
     "url": "https://github.com/dacappo/curriculum-vitae/issues"
   },
   "homepage": "https://github.com/dacappo/curriculum-vitae#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "del": "^3.0.0",
     "gulp": "^4.0.2",
@@ -32,6 +31,7 @@
     "gulp-imagemin": "^5.0.3",
     "gulp-clean-css": "^4.2.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-useref": "^3.1.6"
+    "gulp-useref": "^3.1.6",
+    "lodash.template": ">=4.5.0"
   }
 }
